@@ -1,0 +1,4 @@
+[INFO] 30-07-2025 18:40:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 1
+[INFO] 30-07-2025 18:40:59 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 4
+[INFO] 30-07-2025 18:40:59 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 6
+[INFO] 30-07-2025 18:40:59 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully

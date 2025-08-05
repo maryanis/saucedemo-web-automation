@@ -1,0 +1,6 @@
+[INFO] 30-07-2025 13:16:31 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case comparingPricesTC started
+[INFO] 30-07-2025 13:16:31 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 1
+[INFO] 30-07-2025 13:16:31 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 2
+[INFO] 30-07-2025 13:16:41 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:97)] - total price 0.0
+[INFO] 30-07-2025 13:16:51 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:29)] - total price 0.0
+[INFO] 30-07-2025 13:16:51 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case comparingPricesTC passed

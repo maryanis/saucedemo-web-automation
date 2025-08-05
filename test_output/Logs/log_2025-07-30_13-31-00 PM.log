@@ -1,0 +1,16 @@
+[INFO] 30-07-2025 13:31:00 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case comparingPricesTC started
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:33)] - Random Number 4
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:33)] - Random Number 5
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:117)] - Selected items count (Landing) = 2
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:123)] - Item price = $49.99 | running total = 49.99
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:123)] - Item price = $7.99 | running total = 57.980003
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:126)] - Total selected (Landing) = 57.98
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:44)] - Cart items count = 2
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:50)] - Cart item price = $49.99 | running total = 49.99
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:50)] - Cart item price = $7.99 | running total = 57.980003
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:53)] - Total in Cart = 57.98
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:44)] - Cart items count = 2
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:50)] - Cart item price = $49.99 | running total = 49.99
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:50)] - Cart item price = $7.99 | running total = 57.980003
+[INFO] 30-07-2025 13:31:01 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:53)] - Total in Cart = 57.98
+[INFO] 30-07-2025 13:31:01 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case comparingPricesTC passed

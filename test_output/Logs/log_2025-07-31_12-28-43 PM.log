@@ -1,0 +1,7 @@
+[INFO] 31-07-2025 12:28:43 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutStepTwoTC started
+[INFO] 31-07-2025 12:28:44 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 2
+[INFO] 31-07-2025 12:28:44 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 5
+[INFO] 31-07-2025 12:28:44 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 6
+[INFO] 31-07-2025 12:28:44 [main] [Pages.P05_Overview.calculateTotalPrice(P05_Overview.java:35)] - price + taxes 36.690002
+[INFO] 31-07-2025 12:28:45 [main] [Pages.P05_Overview.getTotal(P05_Overview.java:30)] - total price 36.69
+[INFO] 31-07-2025 12:28:45 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case checkoutStepTwoTC failed

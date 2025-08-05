@@ -1,0 +1,4 @@
+[INFO] 30-07-2025 12:02:53 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case validLoginTC started
+[INFO] 30-07-2025 12:02:54 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 2
+[INFO] 30-07-2025 12:02:54 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 3
+[INFO] 30-07-2025 12:03:14 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case validLoginTC passed

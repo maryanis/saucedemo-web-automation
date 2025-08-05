@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.1.dtd">
+<suite name="Cart suite">
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListenerClass"></listener>
+        <listener class-name="Listeners.ITestResultListenerClass"></listener>
+    </listeners>
+    <test name="Cart Test">
+        <classes>
+            <class name="Tests.TC03_CartTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,5 @@
+[INFO] 29-07-2025 14:52:06 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:29)] - Random Number 2
+[INFO] 29-07-2025 14:52:06 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:29)] - Random Number 5
+[INFO] 29-07-2025 14:52:06 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:29)] - Random Number 6
+[INFO] 29-07-2025 14:52:06 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCartIcon(P02_LandingPage.java:46)] - number of products on cart 3
+[INFO] 29-07-2025 14:52:06 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:57)] - number of selected products 3

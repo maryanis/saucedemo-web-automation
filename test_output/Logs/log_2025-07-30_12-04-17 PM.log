@@ -1,0 +1,4 @@
+[INFO] 30-07-2025 12:04:17 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case comparingPricesTC started
+[INFO] 30-07-2025 12:04:18 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 4
+[INFO] 30-07-2025 12:04:18 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:34)] - Random Number 5
+[INFO] 30-07-2025 12:04:38 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case comparingPricesTC passed

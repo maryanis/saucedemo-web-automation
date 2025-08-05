@@ -1,0 +1,5 @@
+[INFO] 31-07-2025 12:31:13 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutStepTwoTC started
+[INFO] 31-07-2025 12:31:14 [main] [Pages.P02_LandingPage.addAllProductsToCart(P02_LandingPage.java:42)] - number of all products 6
+[INFO] 31-07-2025 12:31:15 [main] [Pages.P05_Overview.calculateTotalPrice(P05_Overview.java:35)] - price + taxes 140.34
+[INFO] 31-07-2025 12:31:15 [main] [Pages.P05_Overview.getTotal(P05_Overview.java:30)] - total price 140.34
+[INFO] 31-07-2025 12:31:15 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case checkoutStepTwoTC passed

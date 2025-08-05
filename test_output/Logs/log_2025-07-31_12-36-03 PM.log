@@ -1,0 +1,7 @@
+[INFO] 31-07-2025 12:36:03 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutStepTwoTC started
+[INFO] 31-07-2025 12:36:04 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 3
+[INFO] 31-07-2025 12:36:04 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 4
+[INFO] 31-07-2025 12:36:04 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:35)] - Random Number 5
+[INFO] 31-07-2025 12:36:05 [main] [Pages.P05_Overview.calculateTotalPrice(P05_Overview.java:36)] - price + taxes 79.89
+[INFO] 31-07-2025 12:36:05 [main] [Pages.P05_Overview.getTotal(P05_Overview.java:30)] - total price 79.89
+[INFO] 31-07-2025 12:36:05 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case checkoutStepTwoTC passed
