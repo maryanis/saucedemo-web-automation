@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -18,11 +21,11 @@ public class P02_LandingPage {
     private final By numberOfProductsOnCartIcon = By.xpath("//span[contains(@class,'shopping_cart_badge')]");
     private final By numberOfSelectedProducts = By.xpath("//button[contains(@class,'btn_secondary')]");
     private final By cartIcon = By.xpath("//a[contains(@class,'shopping_cart_link')]");
+    private final By sortIcon = By.className("product_sort_container");
+    private final By productName = By.className("inventory_item_name");
+    private final By productPrice = By.className("inventory_item_price");
 
-    /* private final By removeButton= By.xpath("//button[contains(@class,'btn_secondary') and contains(normalize-space(.),'REMOVE')]")
-     private final By priceOfSelectedProductsLocator = By.xpath("//button[contains(@class,'btn_secondary') and contains(normalize-space(.),'REMOVE')]/preceding-sibling::div[contains(@class,'inventory_item_price')]");
 
- */
     public P02_LandingPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -105,6 +108,103 @@ public class P02_LandingPage {
             return "0";
         }
     }
+
+    public P02_LandingPage sortProductsAlphabeticallyAtoZ() {
+        Select dropdown = new Select(driver.findElement(sortIcon));
+        dropdown.selectByValue("az");
+        LogsUtils.info("Sorted A to Z");
+        return this;
+    }
+
+    public boolean checkSortingFromAtoZ() {
+        List<WebElement> productNameElements = driver.findElements(productName);
+        List<String> actualProductNames = new ArrayList<>();
+        for (WebElement element : productNameElements) {
+            actualProductNames.add(element.getText());
+        }
+
+        List<String> expectedSortedNames = new ArrayList<>(actualProductNames);
+        Collections.sort(expectedSortedNames);
+
+        LogsUtils.info("Actual: " + actualProductNames);
+        LogsUtils.info("Expected: " + expectedSortedNames);
+
+        return actualProductNames.equals(expectedSortedNames);
+    }
+
+    public P02_LandingPage sortProductsAlphabeticallyZtoA() {
+        Select dropdown = new Select(driver.findElement(sortIcon));
+        dropdown.selectByValue("za");
+        LogsUtils.info("Sorted Z to A");
+        return this;
+    }
+
+    public boolean checkSortingFromZtoA() {
+        List<WebElement> productNameElements = driver.findElements(productName);
+        List<String> actualProductNames = new ArrayList<>();
+        for (WebElement element : productNameElements) {
+            actualProductNames.add(element.getText());
+        }
+
+        List<String> expectedSortedNames = new ArrayList<>(actualProductNames);
+        expectedSortedNames.sort(Collections.reverseOrder());
+
+
+        LogsUtils.info("Actual: " + actualProductNames);
+        LogsUtils.info("Expected: " + expectedSortedNames);
+
+        return actualProductNames.equals(expectedSortedNames);
+    }
+
+    public P02_LandingPage sortProductsByPriceFromLowToHigh() {
+        Select dropdown = new Select(driver.findElement(sortIcon));
+        dropdown.selectByValue("lohi");
+        LogsUtils.info("Sorted by price from low to high");
+        return this;
+    }
+
+    public boolean checkSortingByPricesFromLowToHigh() {
+        List<WebElement> priceElements = driver.findElements(By.className("inventory_item_price"));
+        List<Double> actualPrices = new ArrayList<>();
+
+        for (WebElement element : priceElements) {
+            String priceText = element.getText().replace("$", "");
+            actualPrices.add(Double.parseDouble(priceText));
+        }
+        List<Double> expectedSortedPrices = new ArrayList<>(actualPrices);
+        Collections.sort(expectedSortedPrices);
+        LogsUtils.info("Actual: " + actualPrices);
+        LogsUtils.info("Expected: " + expectedSortedPrices);
+
+        return actualPrices.equals(expectedSortedPrices);
+
+    }
+
+    public P02_LandingPage sortProductsByPriceFromHighToLow() {
+        Select dropdown = new Select(driver.findElement(sortIcon));
+        dropdown.selectByValue("hilo");
+        LogsUtils.info("Sorted by price from high to low");
+        return this;
+    }
+
+    public boolean checkSortingByPricesFromHighToLow() {
+        List<WebElement> priceElements = driver.findElements(By.className("inventory_item_price"));
+        List<Double> actualPrices = new ArrayList<>();
+
+        for (WebElement element : priceElements) {
+            String priceText = element.getText().replace("$", "");
+            actualPrices.add(Double.parseDouble(priceText));
+        }
+        List<Double> expectedSortedPrices = new ArrayList<>(actualPrices);
+        expectedSortedPrices.sort(Collections.reverseOrder());
+
+        LogsUtils.info("Actual: " + actualPrices);
+        LogsUtils.info("Expected: " + expectedSortedPrices);
+
+        return actualPrices.equals(expectedSortedPrices);
+
+    }
+
 
 }
 

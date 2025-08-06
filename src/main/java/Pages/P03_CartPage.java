@@ -18,6 +18,7 @@ public class P03_CartPage {
                     "/preceding-sibling::div[contains(@class,'inventory_item_price')]");
 
     private final By checkoutLink = By.id("checkout");
+    private final By continueShoppingButton = By.id("continue-shopping");
 
     public P03_CartPage(WebDriver driver) {
         this.driver = driver;
@@ -59,6 +60,11 @@ public class P03_CartPage {
     public P04_CheckoutPage clickOnCheckoutButton() {
         Utility.clickingOnElement(driver, checkoutLink);
         return new P04_CheckoutPage(driver);
+    }
+
+    public P02_LandingPage clickOnContinueShoppingButton() {
+        Utility.clickingOnElement(driver, continueShoppingButton);
+        return new P02_LandingPage(driver);
     }
 
 

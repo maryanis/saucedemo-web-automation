@@ -23,6 +23,8 @@
     <build>
         <directory>test_output/target</directory>
         <plugins>
+            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -35,6 +37,7 @@
                         <suiteXmlFile>
                             ${suite.regression}
                         </suiteXmlFile>
+
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>
@@ -112,6 +115,7 @@
             <artifactId>commons-io</artifactId>
             <version>2.15.0</version>
         </dependency>
+
 
     </dependencies>
 

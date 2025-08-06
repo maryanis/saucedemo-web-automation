@@ -64,6 +64,18 @@ public class TC03_CartTest {
 
     }
 
+    @Test
+    public void clickOnContinueShoppingButton() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnContinueShoppingButton();
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
+    }
+
     @AfterMethod
     public void quit() {
         quitDriver();

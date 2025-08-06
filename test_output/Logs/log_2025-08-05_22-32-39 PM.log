@@ -1,0 +1,5 @@
+[INFO] 05-08-2025 22:32:39 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case sortProductsByPriceFromHighToLowTC started
+[INFO] 05-08-2025 22:32:40 [main] [Pages.P02_LandingPage.sortProductsByPriceFromHighToLow(P02_LandingPage.java:186)] - Sorted by price from high to low
+[INFO] 05-08-2025 22:32:40 [main] [Pages.P02_LandingPage.checkSortingByPricesFromHighToLow(P02_LandingPage.java:201)] - Actual: [49.99, 29.99, 15.99, 15.99, 9.99, 7.99]
+[INFO] 05-08-2025 22:32:40 [main] [Pages.P02_LandingPage.checkSortingByPricesFromHighToLow(P02_LandingPage.java:202)] - Expected: [49.99, 29.99, 15.99, 15.99, 9.99, 7.99]
+[INFO] 05-08-2025 22:32:40 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case sortProductsByPriceFromHighToLowTC passed

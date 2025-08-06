@@ -18,6 +18,7 @@ import static Utilities.DataUtils.getPropertyValue;
 
 @Listeners({IInvokedMethodListenerClass.class, ITestResultListenerClass.class})
 
+
 public class TC01_LoginTest {
 
     private String USERNAME = DataUtils.getJasonData("validLogin", "Username");

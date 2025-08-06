@@ -12,6 +12,7 @@ public class P05_Overview {
     private final By tax = By.className("summary_tax_label");
     private final By total = By.className("summary_total_label");
     private final By finishButton = By.id("finish");
+    private final By cancelButton = By.id("cancel");
 
 
     public P05_Overview(WebDriver driver) {
@@ -45,5 +46,10 @@ public class P05_Overview {
     public P06_FinishingOrderPage clickOnFinishButton() {
         Utility.clickingOnElement(driver, finishButton);
         return new P06_FinishingOrderPage(driver);
+    }
+
+    public P02_LandingPage clickOnCancelButton() {
+        Utility.clickingOnElement(driver, cancelButton);
+        return new P02_LandingPage(driver);
     }
 }

@@ -1,0 +1,5 @@
+[INFO] 05-08-2025 20:01:49 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnSortIconTC started
+[INFO] 05-08-2025 20:01:49 [main] [Pages.P02_LandingPage.sortProductsAlphabeticallyAtoZ(P02_LandingPage.java:120)] - Sorted A to Z
+[INFO] 05-08-2025 20:01:49 [main] [Pages.P02_LandingPage.checkSortingFromAtoZ(P02_LandingPage.java:134)] - Actual: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+[INFO] 05-08-2025 20:01:49 [main] [Pages.P02_LandingPage.checkSortingFromAtoZ(P02_LandingPage.java:135)] - Expected: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+[INFO] 05-08-2025 20:01:49 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnSortIconTC passed

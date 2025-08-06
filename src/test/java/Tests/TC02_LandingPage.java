@@ -69,6 +69,54 @@ public class TC02_LandingPage {
 
     }
 
+    @Test
+    public void sortProductsAlphabeticallyAtoZTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .sortProductsAlphabeticallyAtoZ();
+
+        Assert.assertTrue(new P02_LandingPage(getDriver()).checkSortingFromAtoZ(), "The products are not sorted A to Z correctly.");
+
+    }
+
+    @Test
+    public void sortProductsAlphabeticallyZtoATC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .sortProductsAlphabeticallyZtoA();
+
+        Assert.assertTrue(new P02_LandingPage(getDriver()).checkSortingFromZtoA(), "The products are not sorted Z to A correctly.");
+
+    }
+
+    @Test
+    public void sortProductsByPriceFromLowToHighTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .sortProductsByPriceFromLowToHigh();
+
+        Assert.assertTrue(new P02_LandingPage(getDriver()).checkSortingByPricesFromLowToHigh(), "The products are not sorted by prices from low to high correctly.");
+
+    }
+
+    @Test
+    public void sortProductsByPriceFromHighToLowTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .sortProductsByPriceFromHighToLow();
+
+        Assert.assertTrue(new P02_LandingPage(getDriver()).checkSortingByPricesFromHighToLow(), "The products are not sorted by prices from high to low correctly.");
+
+    }
+
     @AfterMethod
     public void quit() {
         quitDriver();

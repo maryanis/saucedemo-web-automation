@@ -49,6 +49,21 @@ public class TC05_OverviewTest {
         Assert.assertTrue(new P05_Overview(getDriver()).comparingPrices());
     }
 
+    @Test
+    public void clickOnContinueShoppingButton() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnCheckoutButton()
+                .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
+                .clickOnContinueButton()
+                .clickOnCancelButton();
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
+    }
+
     @AfterMethod
     public void quit() {
         quitDriver();

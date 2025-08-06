@@ -1,0 +1,3 @@
+[INFO] 05-08-2025 19:46:57 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnSortIconTC started
+[INFO] 05-08-2025 19:46:57 [main] [Pages.P02_LandingPage.sortProductsAlphabeticallyAtoZ(P02_LandingPage.java:111)] - sorted
+[INFO] 05-08-2025 19:46:57 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnSortIconTC passed

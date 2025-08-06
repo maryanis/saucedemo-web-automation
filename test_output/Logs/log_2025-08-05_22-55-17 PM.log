@@ -1,0 +1,6 @@
+[INFO] 05-08-2025 22:55:17 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnContinueShoppingButton started
+[INFO] 05-08-2025 22:55:17 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 3
+[INFO] 05-08-2025 22:55:17 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 4
+[INFO] 05-08-2025 22:55:17 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 5
+[INFO] 05-08-2025 22:55:18 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully
+[INFO] 05-08-2025 22:55:18 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnContinueShoppingButton passed

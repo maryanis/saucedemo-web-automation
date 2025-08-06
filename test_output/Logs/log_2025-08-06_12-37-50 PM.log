@@ -1,0 +1,2 @@
+[INFO] 06-08-2025 12:37:50 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case validLoginTC started
+[INFO] 06-08-2025 12:37:51 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case validLoginTC passed

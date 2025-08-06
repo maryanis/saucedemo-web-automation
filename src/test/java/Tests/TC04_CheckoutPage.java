@@ -49,6 +49,19 @@ public class TC04_CheckoutPage {
         Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "OVERVIEW_URL")));
     }
 
+    @Test
+    public void clickOnCancelButton() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnCheckoutButton()
+                .clickOnCancelButton();
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "CART_URL")));
+    }
+
     @AfterMethod
     public void quit() {
         quitDriver();
