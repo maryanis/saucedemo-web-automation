@@ -1,0 +1,11 @@
+[INFO] 09-08-2025 19:19:45 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnContinueShoppingButton started
+[INFO] 09-08-2025 19:19:45 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 19:19:45 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 4
+[INFO] 09-08-2025 19:19:45 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 5
+[ERROR] 09-08-2025 19:19:56 [main] [Pages.P03_CartPage.removingAllProducts(P03_CartPage.java:80)] - Expected condition failed: waiting for element to be clickable: By.xpath: (//button[contains(text(),'Remove')])[3] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54398}, msedge: {msedgedriverVersion: 137.0.3296.83 (24e00e9cccf2..., userDataDir: C:\Users\marya\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54398/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76b74c2287d1651bc31ac7c75ae3387c
+[INFO] 09-08-2025 19:20:01 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case clickOnContinueShoppingButton failed

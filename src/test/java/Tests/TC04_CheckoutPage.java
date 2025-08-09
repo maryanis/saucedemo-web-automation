@@ -3,6 +3,7 @@ package Tests;
 import Listeners.IInvokedMethodListenerClass;
 import Listeners.ITestResultListenerClass;
 import Pages.P01_LoginPage;
+import Pages.P04_CheckoutPage;
 import Utilities.DataUtils;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
@@ -60,6 +61,24 @@ public class TC04_CheckoutPage {
                 .clickOnCheckoutButton()
                 .clickOnCancelButton();
         Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "CART_URL")));
+    }
+
+    @Test
+    public void checkoutInvalidInformationTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnCheckoutButton()
+                .fillingInformation("", "", "")
+                .clickOnContinueButton();
+
+        String expectedErrorMessage = "Error: First Name is required";
+        String actualErrorMessage = new P04_CheckoutPage(getDriver()).getErrorMessage();
+        Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "CHECKOUT_URL")));
     }
 
     @AfterMethod

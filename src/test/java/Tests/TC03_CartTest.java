@@ -72,9 +72,12 @@ public class TC03_CartTest {
                 .clickLoginButton()
                 .selectRandomProducts(3, 6)
                 .clickOnCartIcon()
+                .removingAllProducts()
                 .clickOnContinueShoppingButton();
-        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
+        Assert.assertTrue(new P02_LandingPage(getDriver())
+                .comparingNumberOfProductsWithSelected());
     }
+
 
     @AfterMethod
     public void quit() {

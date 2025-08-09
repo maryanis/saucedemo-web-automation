@@ -19,6 +19,7 @@ public class P03_CartPage {
 
     private final By checkoutLink = By.id("checkout");
     private final By continueShoppingButton = By.id("continue-shopping");
+    private final By removeButton = By.xpath("//button[contains(text(),'Remove')]");
 
     public P03_CartPage(WebDriver driver) {
         this.driver = driver;
@@ -67,5 +68,21 @@ public class P03_CartPage {
         return new P02_LandingPage(driver);
     }
 
+    public P03_CartPage removingAllProducts() {
+        try {
+            while (true) {
+                List<WebElement> removeButtons = driver.findElements(removeButton);
+                if (removeButtons.isEmpty()) {
+                    break;
+                }
+                removeButtons.get(0).click();
+            }
+        } catch (Exception e) {
+            LogsUtils.error(e.getMessage());
+        }
+        return this;
+    }
 
 }
+
+

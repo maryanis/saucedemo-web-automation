@@ -1,0 +1,12 @@
+[INFO] 09-08-2025 19:31:50 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnContinueShoppingButton started
+[INFO] 09-08-2025 19:31:50 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 19:31:51 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 2
+[INFO] 09-08-2025 19:31:51 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 5
+[ERROR] 09-08-2025 19:32:11 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCartIcon(P02_LandingPage.java:58)] - Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(@class,'shopping_cart_badge')] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54947}, msedge: {msedgedriverVersion: 137.0.3296.83 (24e00e9cccf2..., userDataDir: C:\Users\marya\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54947/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c14726a9e69696942564521c0f807b2
+[INFO] 09-08-2025 19:32:21 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:66)] - number of selected products 0
+[INFO] 09-08-2025 19:32:21 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnContinueShoppingButton passed

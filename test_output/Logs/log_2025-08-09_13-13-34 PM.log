@@ -1,0 +1,76 @@
+[INFO] 09-08-2025 13:13:34 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case invalidUsernameAndInvalidPasswordTC started
+[INFO] 09-08-2025 13:13:35 [main] [Pages.P01_LoginPage.getErrorMessage(P01_LoginPage.java:43)] - Epic sadface: Username and password do not match any user in this service
+[INFO] 09-08-2025 13:13:35 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case invalidUsernameAndInvalidPasswordTC passed
+[INFO] 09-08-2025 13:13:40 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case validLoginTC started
+[INFO] 09-08-2025 13:13:40 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case validLoginTC passed
+[INFO] 09-08-2025 13:13:45 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case addingRandomProductsToCartTC started
+[INFO] 09-08-2025 13:13:46 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 13:13:46 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 3
+[INFO] 09-08-2025 13:13:46 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 6
+[INFO] 09-08-2025 13:13:46 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCartIcon(P02_LandingPage.java:55)] - number of products on cart 3
+[INFO] 09-08-2025 13:13:46 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:66)] - number of selected products 3
+[INFO] 09-08-2025 13:13:46 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case addingRandomProductsToCartTC passed
+[INFO] 09-08-2025 13:13:52 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkNumberOfSelectedProductsTC started
+[INFO] 09-08-2025 13:13:52 [main] [Pages.P02_LandingPage.addAllProductsToCart(P02_LandingPage.java:45)] - number of all products 6
+[INFO] 09-08-2025 13:13:53 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCartIcon(P02_LandingPage.java:55)] - number of products on cart 6
+[INFO] 09-08-2025 13:13:53 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:66)] - number of selected products 6
+[INFO] 09-08-2025 13:13:53 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case checkNumberOfSelectedProductsTC passed
+[INFO] 09-08-2025 13:13:58 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnCartIconTC started
+[INFO] 09-08-2025 13:13:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 2
+[INFO] 09-08-2025 13:13:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 3
+[INFO] 09-08-2025 13:13:59 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 5
+[INFO] 09-08-2025 13:13:59 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully
+[INFO] 09-08-2025 13:13:59 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnCartIconTC passed
+[INFO] 09-08-2025 13:14:04 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case sortProductsAlphabeticallyAtoZTC started
+[INFO] 09-08-2025 13:14:04 [main] [Pages.P02_LandingPage.sortProductsAlphabeticallyAtoZ(P02_LandingPage.java:115)] - Sorted A to Z
+[INFO] 09-08-2025 13:14:04 [main] [Pages.P02_LandingPage.checkSortingFromAtoZ(P02_LandingPage.java:129)] - Actual: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+[INFO] 09-08-2025 13:14:04 [main] [Pages.P02_LandingPage.checkSortingFromAtoZ(P02_LandingPage.java:130)] - Expected: [Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)]
+[INFO] 09-08-2025 13:14:04 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case sortProductsAlphabeticallyAtoZTC passed
+[INFO] 09-08-2025 13:14:09 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case sortProductsAlphabeticallyZtoATC started
+[INFO] 09-08-2025 13:14:10 [main] [Pages.P02_LandingPage.sortProductsAlphabeticallyZtoA(P02_LandingPage.java:138)] - Sorted Z to A
+[INFO] 09-08-2025 13:14:10 [main] [Pages.P02_LandingPage.checkSortingFromZtoA(P02_LandingPage.java:153)] - Actual: [Test.allTheThings() T-Shirt (Red), Sauce Labs Onesie, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Bike Light, Sauce Labs Backpack]
+[INFO] 09-08-2025 13:14:10 [main] [Pages.P02_LandingPage.checkSortingFromZtoA(P02_LandingPage.java:154)] - Expected: [Test.allTheThings() T-Shirt (Red), Sauce Labs Onesie, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Bike Light, Sauce Labs Backpack]
+[INFO] 09-08-2025 13:14:10 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case sortProductsAlphabeticallyZtoATC passed
+[INFO] 09-08-2025 13:14:15 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case sortProductsByPriceFromHighToLowTC started
+[INFO] 09-08-2025 13:14:16 [main] [Pages.P02_LandingPage.sortProductsByPriceFromHighToLow(P02_LandingPage.java:186)] - Sorted by price from high to low
+[INFO] 09-08-2025 13:14:16 [main] [Pages.P02_LandingPage.checkSortingByPricesFromHighToLow(P02_LandingPage.java:201)] - Actual: [49.99, 29.99, 15.99, 15.99, 9.99, 7.99]
+[INFO] 09-08-2025 13:14:16 [main] [Pages.P02_LandingPage.checkSortingByPricesFromHighToLow(P02_LandingPage.java:202)] - Expected: [49.99, 29.99, 15.99, 15.99, 9.99, 7.99]
+[INFO] 09-08-2025 13:14:16 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case sortProductsByPriceFromHighToLowTC passed
+[INFO] 09-08-2025 13:14:21 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case sortProductsByPriceFromLowToHighTC started
+[INFO] 09-08-2025 13:14:22 [main] [Pages.P02_LandingPage.sortProductsByPriceFromLowToHigh(P02_LandingPage.java:162)] - Sorted by price from low to high
+[INFO] 09-08-2025 13:14:22 [main] [Pages.P02_LandingPage.checkSortingByPricesFromLowToHigh(P02_LandingPage.java:176)] - Actual: [7.99, 9.99, 15.99, 15.99, 29.99, 49.99]
+[INFO] 09-08-2025 13:14:22 [main] [Pages.P02_LandingPage.checkSortingByPricesFromLowToHigh(P02_LandingPage.java:177)] - Expected: [7.99, 9.99, 15.99, 15.99, 29.99, 49.99]
+[INFO] 09-08-2025 13:14:22 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case sortProductsByPriceFromLowToHighTC passed
+[INFO] 09-08-2025 13:14:27 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnCheckoutButton started
+[INFO] 09-08-2025 13:14:32 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case clickOnCheckoutButton failed
+[INFO] 09-08-2025 13:14:36 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnContinueShoppingButton started
+[INFO] 09-08-2025 13:14:36 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 13:14:37 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 3
+[INFO] 09-08-2025 13:14:37 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 4
+[INFO] 09-08-2025 13:14:37 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully
+[INFO] 09-08-2025 13:14:37 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnContinueShoppingButton passed
+[INFO] 09-08-2025 13:14:42 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case comparingPricesTC started
+[INFO] 09-08-2025 13:14:43 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 13:14:43 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 6
+[INFO] 09-08-2025 13:14:43 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:96)] - Number of Selected items 2
+[INFO] 09-08-2025 13:14:43 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:104)] - Total price of selected items = 45.98
+[INFO] 09-08-2025 13:14:44 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:40)] - Number of Selected items 2
+[INFO] 09-08-2025 13:14:44 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:48)] - Total price of selected items = 45.98
+[INFO] 09-08-2025 13:14:44 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case comparingPricesTC passed
+[INFO] 09-08-2025 13:14:49 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutInformationTC started
+[INFO] 09-08-2025 13:14:54 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case checkoutInformationTC failed
+[INFO] 09-08-2025 13:14:57 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnCancelButton started
+[INFO] 09-08-2025 13:14:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 1
+[INFO] 09-08-2025 13:14:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 2
+[INFO] 09-08-2025 13:14:58 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 6
+[INFO] 09-08-2025 13:14:59 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully
+[INFO] 09-08-2025 13:14:59 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case clickOnCancelButton passed
+[INFO] 09-08-2025 13:15:04 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutStepTwoTC started
+[INFO] 09-08-2025 13:15:09 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case checkoutStepTwoTC failed
+[INFO] 09-08-2025 13:15:13 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickOnContinueShoppingButton started
+[INFO] 09-08-2025 13:15:14 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 2
+[INFO] 09-08-2025 13:15:18 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case clickOnContinueShoppingButton failed
+[INFO] 09-08-2025 13:15:21 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case backToHomeTC started
+[INFO] 09-08-2025 13:15:27 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case backToHomeTC failed
+[INFO] 09-08-2025 13:15:31 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case finishOrderTC started
+[INFO] 09-08-2025 13:15:35 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:19)] - Test Case finishOrderTC failed
