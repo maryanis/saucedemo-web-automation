@@ -42,6 +42,19 @@ public class TC01_LoginTest {
                 .assertLoginTC(getPropertyValue("environment", "HOME_URL")));
     }
 
+    @Test
+    public void invalidUsernameAndInvalidPasswordTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername("wrong_user")
+                .enterPassword("wrong_password")
+                .clickLoginButton();
+        String expectedErrorMessage = "Epic sadface: Username and password do not match any user in this service";
+        String actualErrorMessage = new P01_LoginPage(getDriver()).getErrorMessage();
+        Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
+        Assert.assertFalse(new P01_LoginPage(getDriver())
+                .assertLoginTC(getPropertyValue("environment", "HOME_URL")));
+    }
+
     @AfterMethod
     public void quit() {
         quitDriver();

@@ -1,0 +1,2 @@
+[INFO] 09-08-2025 11:01:50 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case invalidUsernameAndInvalidPasswordTC started
+[INFO] 09-08-2025 11:01:50 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case invalidUsernameAndInvalidPasswordTC passed
