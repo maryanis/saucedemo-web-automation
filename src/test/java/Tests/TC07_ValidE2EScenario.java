@@ -34,13 +34,54 @@ public class TC07_ValidE2EScenario {
     }
 
     @Test
-    public void backToHomeTC() throws IOException {
+    public void ValidE2E() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnCheckoutButton()
+                .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
+                .clickOnContinueButton()
+                .clickOnFinishButton()
+                .clickOnBackToHomeButton();
+
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
+    }
+
+    @Test
+    public void ValidE2EWithSortingProducts() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
                 .enterPassword(PASSWORD)
                 .clickLoginButton()
                 .sortProductsByPriceFromHighToLow()
+                .sortProductsByPriceFromLowToHigh()
+                .sortProductsAlphabeticallyAtoZ()
+                .sortProductsAlphabeticallyZtoA()
                 .selectRandomProducts(3, 6)
+                .clickOnCartIcon()
+                .clickOnCheckoutButton()
+                .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
+                .clickOnContinueButton()
+                .clickOnFinishButton()
+                .clickOnBackToHomeButton();
+
+        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
+    }
+
+    @Test
+    public void ValidE2EWithRemovingProductsFromCartTC() throws IOException {
+        new P01_LoginPage(getDriver())
+                .enterUsername(USERNAME)
+                .enterPassword(PASSWORD)
+                .clickLoginButton()
+                .addAllProductsToCart()
+                .clickOnCartIcon()
+                .removingAllProducts()
+                .clickOnContinueShoppingButton()
+                .selectRandomProducts(4, 6)
                 .clickOnCartIcon()
                 .clickOnCheckoutButton()
                 .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
