@@ -32,7 +32,7 @@ public class TC01_LoginTest {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test(groups = "E2E", priority = 1)
+    @Test
     public void validLoginTC() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)

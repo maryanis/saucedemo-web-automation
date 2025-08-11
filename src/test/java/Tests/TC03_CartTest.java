@@ -34,7 +34,7 @@ public class TC03_CartTest {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test(groups = "E2E", priority = 4)
+    @Test
     public void comparingPricesTC() throws IOException {
         String totalPriceLanding = new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)

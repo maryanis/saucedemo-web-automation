@@ -43,7 +43,7 @@ public class TC02_LandingPage {
                 .comparingNumberOfProductsWithSelected());
     }
 
-    @Test(groups = "E2E", priority = 2)
+    @Test
     public void addingRandomProductsToCartTC() {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
@@ -56,7 +56,7 @@ public class TC02_LandingPage {
 
     }
 
-    @Test(groups = "E2E", priority = 3)
+    @Test
     public void clickOnCartIconTC() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
