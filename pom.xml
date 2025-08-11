@@ -17,13 +17,14 @@
         <suite.overview>TestRunner/OverviewSuite.xml</suite.overview>
         <suite.finishing>TestRunner/FinishOrderSuite.xml</suite.finishing>
         <suite.regression>TestRunner/RegressionSuite.xml</suite.regression>
+        <suite.E2E>TestRunner/E2ESuite.xml</suite.E2E>
     </properties>
 
 
     <build>
         <directory>test_output/target</directory>
         <plugins>
-            
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -35,7 +36,7 @@
                     </argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ${suite.regression}
+                            ${suite.E2E}
                         </suiteXmlFile>
 
                     </suiteXmlFiles>

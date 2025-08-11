@@ -50,22 +50,6 @@ public class TC06_FinishingOrder {
         Assert.assertTrue(new P06_FinishingOrderPage(getDriver()).checkVisibilityOfThanksMessage());
     }
 
-    @Test
-    public void backToHomeTC() throws IOException {
-        new P01_LoginPage(getDriver())
-                .enterUsername(USERNAME)
-                .enterPassword(PASSWORD)
-                .clickLoginButton()
-                .selectRandomProducts(3, 6)
-                .clickOnCartIcon()
-                .clickOnCheckoutButton()
-                .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
-                .clickOnContinueButton()
-                .clickOnFinishButton()
-                .clickOnBackToHomeButton();
-
-        Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
-    }
 
     @AfterMethod
     public void quit() {

@@ -3,7 +3,6 @@ package Tests;
 import Listeners.IInvokedMethodListenerClass;
 import Listeners.ITestResultListenerClass;
 import Pages.P01_LoginPage;
-import Pages.P05_Overview;
 import Utilities.DataUtils;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
@@ -20,7 +19,7 @@ import static DriverFactory.DriverFactory.*;
 import static Utilities.DataUtils.getPropertyValue;
 
 @Listeners({IInvokedMethodListenerClass.class, ITestResultListenerClass.class})
-public class TC05_OverviewTest {
+public class TC07_ValidE2EScenario {
     private final String FIRSTNAME = DataUtils.getJasonData("info", "Firstname") + "-" + Utility.getTimestamp();
     private final String LASTNAME = DataUtils.getJasonData("info", "Lastname") + "-" + Utility.getTimestamp();
     private final String ZIPCODE = new Faker().number().digits(5);
@@ -34,33 +33,21 @@ public class TC05_OverviewTest {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test(groups = "E2E", priority = 7)
-    public void checkoutStepTwoTC() throws IOException {
-        new P01_LoginPage(getDriver())
-                .enterUsername(USERNAME)
-                .enterPassword(PASSWORD)
-                .clickLoginButton()
-                .selectRandomProducts(3, 6)
-                .clickOnCartIcon()
-                .clickOnCheckoutButton()
-                .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
-                .clickOnContinueButton();
-
-        Assert.assertTrue(new P05_Overview(getDriver()).comparingPrices());
-    }
-
     @Test
-    public void clickOnContinueShoppingButton() throws IOException {
+    public void backToHomeTC() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
                 .enterPassword(PASSWORD)
                 .clickLoginButton()
+                .sortProductsByPriceFromHighToLow()
                 .selectRandomProducts(3, 6)
                 .clickOnCartIcon()
                 .clickOnCheckoutButton()
                 .fillingInformation(FIRSTNAME, LASTNAME, ZIPCODE)
                 .clickOnContinueButton()
-                .clickOnCancelButton();
+                .clickOnFinishButton()
+                .clickOnBackToHomeButton();
+
         Assert.assertTrue(Utility.verifyUrl(getDriver(), DataUtils.getPropertyValue("environment", "HOME_URL")));
     }
 
@@ -68,4 +55,5 @@ public class TC05_OverviewTest {
     public void quit() {
         quitDriver();
     }
+
 }

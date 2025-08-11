@@ -1,0 +1,7 @@
+[INFO] 11-08-2025 12:05:46 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case checkoutInvalidInformationTC started
+[INFO] 11-08-2025 12:05:47 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 2
+[INFO] 11-08-2025 12:05:47 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 4
+[INFO] 11-08-2025 12:05:48 [main] [Pages.P02_LandingPage.selectRandomProducts(P02_LandingPage.java:38)] - Random Number 6
+[INFO] 11-08-2025 12:05:49 [main] [Pages.P04_CheckoutPage.getErrorMessage(P04_CheckoutPage.java:50)] - Error: First Name is required
+[INFO] 11-08-2025 12:05:49 [main] [Utilities.Utility.verifyUrl(Utility.java:86)] - navigate successfully
+[INFO] 11-08-2025 12:05:49 [main] [Listeners.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] - Test Case checkoutInvalidInformationTC passed

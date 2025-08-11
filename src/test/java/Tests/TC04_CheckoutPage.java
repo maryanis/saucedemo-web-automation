@@ -35,7 +35,7 @@ public class TC04_CheckoutPage {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test
+    @Test(groups = "E2E", priority = 6)
     public void checkoutInformationTC() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)

@@ -34,7 +34,7 @@ public class TC03_CartTest {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test
+    @Test(groups = "E2E", priority = 4)
     public void comparingPricesTC() throws IOException {
         String totalPriceLanding = new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
@@ -51,7 +51,7 @@ public class TC03_CartTest {
         Assert.assertTrue(new P03_CartPage(getDriver()).comparePrices(totalPriceLanding));
     }
 
-    @Test
+    @Test(groups = "E2E", priority = 5)
     public void clickOnCheckoutButton() throws IOException {
         new P01_LoginPage(getDriver())
                 .enterUsername(USERNAME)
